@@ -1,0 +1,18 @@
+SET NAMES UTF8;
+
+DROP DATABASE IF EXISTS erp;
+
+CREATE DATABASE erp CHARSET=UTF8;
+
+USE erp;
+
+CREATE TABLE employee_info(   
+	eid INT PRIMARY KEY AUTO_INCREMENT,
+	eadvatar VARCHAR(100) DEFAULT './images/employee/avatar.png',
+	ename VARCHAR(32) NOT NULL,
+	ework VARCHAR(100) NOT NULL,
+	edate INT(11) NOT NULL,
+	eresume VARCHAR(100) 
+
+
+);
